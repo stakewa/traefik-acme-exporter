@@ -1,0 +1,20 @@
+{
+  "name": "traefik-acme-exporter",
+  "module": "index.ts",
+  "type": "module",
+  "author": {
+    "email": "contact@daaf.dev",
+    "name": "Daaf",
+    "url": "https://github.com/StaKeWa/traefik-acme-exporter"
+  },
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
