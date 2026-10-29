@@ -14,7 +14,6 @@ The exporter:
 3. Reads certificates from Traefik's ACME storage.
 4. Decodes the base64-encoded PEM values.
 5. Writes certificate and private-key files to `/output`.
-6. Restricts private-key permissions to `0600`.
 
 The service uses polling because filesystem events do not (reliably) pass through Docker bind mounts.
 
