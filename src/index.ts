@@ -27,7 +27,9 @@ async function main() {
 }
 
 // Always run on startup
-await main();
+await main().catch((error) => {
+    console.error("Error occurred during startup:", error);
+});
 
 // Uses watchFile with polling instead of default watch, because most filesystem events don't go through bind-mounts
 watchFile(inputFile, {interval: 5_000}, async () => {
